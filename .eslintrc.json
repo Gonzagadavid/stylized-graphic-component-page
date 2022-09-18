@@ -15,12 +15,14 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "formatjs"
     ],
     "rules": {
         "react/prop-types": "off",
         "no-nested-ternary": "off",
         "jsx-a11y/control-has-associated-label": "off",
-        "react/no-unused-state": "off"
+        "react/no-unused-state": "off",
+        "formatjs/no-offset": "error"
     }
 }

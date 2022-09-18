@@ -5,11 +5,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import store from './redux';
+import LocaleProvider from './locales';
 
 ReactDOM.render(
   <Router>
     <Provider store={store}>
-      <App />
+      <LocaleProvider>
+        <App />
+      </LocaleProvider>
     </Provider>
   </Router>,
   document.getElementById('root'),
