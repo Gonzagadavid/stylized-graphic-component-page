@@ -6,6 +6,7 @@ export const ADD_LEGEND = 'ADD_LEGEND';
 export const REMOVE_DATA = 'REMOVE_DATA';
 export const EDIT_COLOR = 'EDIT_COLOR';
 export const EDIT_QTY = 'EDIT_QTY';
+export const LANGUAGE = 'LANGUAGE';
 
 export const actionAddData = (state) => ({ type: ADD_DATA, state });
 
@@ -22,3 +23,5 @@ export const actionRemoveData = (state) => ({ type: REMOVE_DATA, state });
 export const actionEditColor = (state) => ({ type: EDIT_COLOR, state });
 
 export const actionEditQty = (state) => ({ type: EDIT_QTY, state });
+
+export const actionLanguage = (state) => ({ type: LANGUAGE, state });

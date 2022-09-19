@@ -23,6 +23,10 @@
         "no-nested-ternary": "off",
         "jsx-a11y/control-has-associated-label": "off",
         "react/no-unused-state": "off",
-        "formatjs/no-offset": "error"
+        "formatjs/no-offset": "error",
+        "import/prefer-default-export": "off",
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off"
+
     }
 }
