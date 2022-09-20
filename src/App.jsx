@@ -7,6 +7,7 @@ import CodePage from './pages/CodePage/CodePage';
 import Home from './pages/Home/Home';
 import SetPage from './pages/SetPage/SetPage';
 import SummaryPage from './pages/SummaryPage.jsx/SummaryPage';
+import SelectLanguage from './components/SelectLanguage';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Link to="/percentage-chart/settings">Estilizar Gráfico</Link>
         <Link to="/percentage-chart/code">Código do Estilo</Link>
         <Link to="/percentage-chart/summary">Sumário</Link>
+        <div>
+          <SelectLanguage />
+        </div>
       </nav>
       <main>
         <Switch>

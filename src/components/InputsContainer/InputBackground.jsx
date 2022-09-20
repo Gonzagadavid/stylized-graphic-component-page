@@ -21,6 +21,7 @@ const InputBackground = ({ state, addBackground }) => {
         }) => (
           <Input
             type={type}
+            key={labelText}
             name={name}
             labelText={labelText}
             value={value || state[name]}

@@ -1,5 +1,6 @@
 import {
-  ADD_BACKGROUND, ADD_COLOR, ADD_DATA, ADD_LEGEND, ADD_STYLEBAR, EDIT_COLOR, EDIT_QTY, REMOVE_DATA,
+  ADD_BACKGROUND, ADD_COLOR, ADD_DATA, ADD_LEGEND,
+  ADD_STYLEBAR, EDIT_COLOR, EDIT_QTY, LANGUAGE, REMOVE_DATA,
 } from '../actions';
 
 const INITIAL_STATE = {
@@ -76,6 +77,9 @@ const reducerData = (state = INITIAL_STATE, action) => {
         ...state,
         data: { ...state.data, [action.state.name]: action.state.qty },
       };
+
+    case LANGUAGE:
+      return { ...state, locale: action.state };
 
     default: return state;
   }
