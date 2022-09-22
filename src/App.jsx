@@ -18,9 +18,9 @@ function App() {
           <a href="https://www.npmjs.com/package/stylized-graphic-component" target="_blank" rel="noreferrer"><DiNpm /></a>
         </div>
         <Link to="/percentage-chart"><FormattedMessage id="common.home" /></Link>
-        <Link to="/percentage-chart/settings">Estilizar Gráfico</Link>
-        <Link to="/percentage-chart/code">Código do Estilo</Link>
-        <Link to="/percentage-chart/summary">Sumário</Link>
+        <Link to="/percentage-chart/settings"><FormattedMessage id="common.styleChart" /></Link>
+        <Link to="/percentage-chart/code"><FormattedMessage id="common.styleCode" /></Link>
+        <Link to="/percentage-chart/summary"><FormattedMessage id="common.summary" /></Link>
         <div>
           <SelectLanguage />
         </div>
