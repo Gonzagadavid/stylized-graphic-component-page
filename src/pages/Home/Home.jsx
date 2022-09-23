@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaReact } from 'react-icons/fa';
+import { FormattedMessage } from 'react-intl';
 import './Home.css';
 
 const Home = () => (
@@ -12,10 +13,9 @@ const Home = () => (
       <FaReact />
     </h1>
     <p>
-      Essa página tem como finalidade auxiliar na estilização do componente
-      libary stylized-percentage-chart
+      <FormattedMessage id="home.title" />
     </p>
-    <p>Na página Estilizar gráfico encontrar ferramentas que permitirá que estilize o gráfico:</p>
+    <p><FormattedMessage id="home.subtitle" /></p>
     <ul>
       <li>Na guia Backgroud, estilizar o fundo do seu gráfico;</li>
       <li>Na guia Inserir Dados, insira dados simulando o que ocorrerá na sua aplização;</li>
