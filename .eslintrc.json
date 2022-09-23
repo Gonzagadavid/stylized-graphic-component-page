@@ -26,7 +26,8 @@
         "formatjs/no-offset": "error",
         "import/prefer-default-export": "off",
         "import/no-named-as-default": "off",
-        "import/no-named-as-default-member": "off"
+        "import/no-named-as-default-member": "off",
+        "react/no-array-index-key": "off"
 
     }
 }
