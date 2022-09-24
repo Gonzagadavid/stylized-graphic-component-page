@@ -8,6 +8,14 @@ import Home from './pages/Home/Home';
 import SetPage from './pages/SetPage/SetPage';
 import SummaryPage from './pages/SummaryPage.jsx/SummaryPage';
 import SelectLanguage from './components/SelectLanguage';
+import { settingsRoutes } from './pages/DataPage/DataPage';
+
+const routes = {
+  HOME: '/',
+  SETTINGS: '/settings/*',
+  CODE: '/code',
+  SUMMARY: '/summary',
+};
 
 function App() {
   return (
@@ -17,20 +25,20 @@ function App() {
           <a href="https://github.com/Gonzagadavid/percentage-chart" target="_blank" rel="noreferrer"><DiGithubBadge /></a>
           <a href="https://www.npmjs.com/package/stylized-graphic-component" target="_blank" rel="noreferrer"><DiNpm /></a>
         </div>
-        <Link to="/percentage-chart"><FormattedMessage id="common.home" /></Link>
-        <Link to="/percentage-chart/settings"><FormattedMessage id="common.styleChart" /></Link>
-        <Link to="/percentage-chart/code"><FormattedMessage id="common.styleCode" /></Link>
-        <Link to="/percentage-chart/summary"><FormattedMessage id="common.summary" /></Link>
+        <Link to={routes.HOME}><FormattedMessage id="common.home" /></Link>
+        <Link to={settingsRoutes.BACKGROUND}><FormattedMessage id="common.styleChart" /></Link>
+        <Link to={routes.CODE}><FormattedMessage id="common.styleCode" /></Link>
+        <Link to={routes.SUMMARY}><FormattedMessage id="common.summary" /></Link>
         <div>
           <SelectLanguage />
         </div>
       </nav>
       <main>
         <Switch>
-          <Route exact path="/percentage-chart" component={Home} />
-          <Route path="/percentage-chart/settings" component={SetPage} />
-          <Route path="/percentage-chart/code" component={CodePage} />
-          <Route path="/percentage-chart/summary" component={SummaryPage} />
+          <Route exact path={routes.HOME} component={Home} />
+          <Route path={routes.SETTINGS} component={SetPage} />
+          <Route path={routes.CODE} component={CodePage} />
+          <Route path={routes.SUMMARY} component={SummaryPage} />
         </Switch>
       </main>
     </div>

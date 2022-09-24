@@ -7,14 +7,22 @@ import InputData from '../../components/InputsContainer/InputData';
 import Legend from '../../components/InputsContainer/Lengend';
 import './DataPage.css';
 
+export const settingsRoutes = {
+  BACKGROUND: '/settings/background',
+  INSERT_DATA: '/settings/insert-data',
+  EDIT_BAR: '/settings/edit-bar',
+  STYLE_BAR: '/settings/style-bar',
+  LEGEND: '/settings/legend',
+};
+
 const DataPage = () => (
   <div className="DataPage">
     <Switch>
-      <Route exact path="/percentage-chart/settings" component={InputBackground} />
-      <Route path="/percentage-chart/settings/insert-data" component={InputData} />
-      <Route path="/percentage-chart/settings/edit-bar" component={EditBarContainer} />
-      <Route path="/percentage-chart/settings/style-bar" component={InputBar} />
-      <Route path="/percentage-chart/settings/legend" component={Legend} />
+      <Route exact path={settingsRoutes.BACKGROUND} component={InputBackground} />
+      <Route path={settingsRoutes.INSERT_DATA} component={InputData} />
+      <Route path={settingsRoutes.EDIT_BAR} component={EditBarContainer} />
+      <Route path={settingsRoutes.STYLE_BAR} component={InputBar} />
+      <Route path={settingsRoutes.LEGEND} component={Legend} />
     </Switch>
   </div>
 );
