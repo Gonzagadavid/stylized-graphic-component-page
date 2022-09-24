@@ -1,5 +1,5 @@
 export default {
-  title: 'This page is intended to assist in styling the stylized-percentage-chart library component',
+  title: 'This application is intended to assist in styling the stylized-percentage-chart library component',
   subtitle: 'On the page you will find tools that will allow you to style the chart:',
   item1: 'On the Background tab, style the background of your chart;',
   item2: 'On the insert tab, insert data simulating what in your application',
