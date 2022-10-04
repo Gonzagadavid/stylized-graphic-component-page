@@ -4,6 +4,7 @@ import './CodePage.css';
 import Highlight from 'react-highlight';
 import { GiConfirmed } from 'react-icons/gi';
 import { FaRegCopy } from 'react-icons/fa';
+import { FormattedMessage } from 'react-intl';
 
 const CodePage = ({
   heightGraph, widthGraph, backgroundColor, lineColor, fontBar, fontSizeBackground,
@@ -38,11 +39,11 @@ const CodePage = ({
       {copied ? (
         <p className="copied">
           <GiConfirmed />
-          <span>Copied to clipboard!</span>
+          <span><FormattedMessage id="codePage.copied" /></span>
         </p>
       ) : ''}
-      <h2>Finalizando</h2>
-      <p>Crie um arquivo, copie e cole o objeto com os dados da estilização, depois o exporte</p>
+      <h2><FormattedMessage id="codePage.finishing" /></h2>
+      <p><FormattedMessage id="codePage.createFile" /></p>
       <div className="code">
         <button type="button" className="copy-button" onClick={() => copyToClip(objectCode)}>
           <FaRegCopy />
@@ -89,7 +90,7 @@ export default style
         </Highlight>
       </div>
       <p>
-        Instale o componente libary em sua aplicação
+        <FormattedMessage id="codePage.installLib" />
       </p>
       <div className="code">
         <button type="button" className="copy-button" onClick={() => copyToClip(npm)}>
@@ -100,12 +101,13 @@ export default style
             npm i stylized-graphic-component
           </p>
         </Highlight>
-        <em>a versão atual é com react 17.0.2, a versão 1.0.5 utiliza a 16.12.0 - </em>
+        <em>
+          <FormattedMessage id="codePage.version" />
+        </em>
         <em>npm i stylized-graphic-component@1.0.5</em>
       </div>
       <p>
-        Importe o componete stylized-percentage-chart  e passe os dados do estilo e os dados a ser
-        renderizado como props
+        <FormattedMessage id="codePage.importProps" />
       </p>
       <div className="code">
         <button type="button" className="copy-button" onClick={() => copyToClip(importLine)}>
