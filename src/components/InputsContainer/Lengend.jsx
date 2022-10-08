@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { legend } from '../../data/inputs';
 import { actionAddLegend } from '../../redux/actions';
@@ -17,7 +18,7 @@ const Legend = ({ state, addLegend }) => {
 
   return (
     <div className="InputConatiner">
-      <h3>Legenda</h3>
+      <h3><FormattedMessage id="navSetComponent.subtitle" /></h3>
       <Input type="checkbox" name="withLegend" labelText="Com legenda" checked={state.withLegend} change={handlerChange} />
       { state.withLegend
         && (

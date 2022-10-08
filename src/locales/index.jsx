@@ -6,7 +6,6 @@ import messages from './languages';
 
 const LocaleProvider = ({ children }) => {
   const { locale } = useSelector((state) => state);
-  console.log(messages);
   return (
     <IntlProvider
       textComponent={Fragment}

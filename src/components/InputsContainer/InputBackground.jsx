@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { inputBackground } from '../../data/inputs';
 import { actionAddBackground } from '../../redux/actions';
@@ -14,7 +15,7 @@ const InputBackground = ({ state, addBackground }) => {
 
   return (
     <div className="InputConatiner">
-      <h3>Estilo Background</h3>
+      <h3><FormattedMessage id="navSetComponent.background" /></h3>
       {
         inputBackground.map(({
           type, name, labelText, value,

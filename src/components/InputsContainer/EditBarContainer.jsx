@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { actionEditColor, actionEditQty, actionRemoveData } from '../../redux/actions';
 import EditBar from '../EditBar/EditBar';
@@ -10,7 +11,7 @@ const EditBarContainer = ({
   const names = Object.keys(data);
   return (
     <div className="InputConatiner">
-      <h3>Editar Barras</h3>
+      <h3><FormattedMessage id="navSetComponent.editBar" /></h3>
       {names.map((name, index) => (
         <EditBar
           text={name}

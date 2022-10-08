@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { inputBar } from '../../data/inputs';
 import { actionAddStyleBar } from '../../redux/actions';
@@ -17,7 +18,7 @@ const InputBar = ({ addStyleBar, state }) => {
 
   return (
     <div className="InputConatiner">
-      <h3>Estilo das Barras</h3>
+      <h3><FormattedMessage id="navSetComponent.styleBar" /></h3>
       {
          state.fontColordifBar
         && (

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { connect } from 'react-redux';
 import { inputData } from '../../data/inputs';
@@ -25,7 +26,7 @@ const InputData = ({ addData, addColor }) => {
 
   return (
     <div className="InputConatiner">
-      <h3>Inserir Dados</h3>
+      <h3><FormattedMessage id="navSetComponent.data" /></h3>
       {
         inputData.map(({ type, name, labelText }) => (
           <Input
