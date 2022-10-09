@@ -1,7 +1,7 @@
 import { common as commonPT } from '../messages/pt-BR';
 import { common as commonEN } from '../messages/en-US';
 import {
-  home, setPage, codePage, navSetComponent,
+  home, setPage, codePage, navSetComponent, inputLabel,
 } from '../messages';
 
 export default {
@@ -11,6 +11,7 @@ export default {
     setPage: setPage['pt-BR'],
     codePage: codePage['pt-BR'],
     navSetComponent: navSetComponent['pt-BR'],
+    inputLabel: inputLabel['pt-BR'],
   },
   'en-US': {
     common: commonEN,
@@ -18,5 +19,6 @@ export default {
     setPage: setPage['en-US'],
     codePage: codePage['en-US'],
     navSetComponent: navSetComponent['en-US'],
+    inputLabel: inputLabel['en-US'],
   },
 };

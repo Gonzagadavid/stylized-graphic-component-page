@@ -1,0 +1,43 @@
+export default {
+  inputBackground: {
+    backgroundColor: 'Cor de fundo:',
+    lineColor: 'Cor da linha:',
+    widthLine: 'Largura da linha:',
+    fontSizeBackground: 'Tamanho da letra:',
+    fontBackground: 'Fonte de fundo:',
+    widthGraph: 'Largura do gráfico:',
+    heightGraph: 'Altura do gráfico:',
+    widthBorder: 'Espessura da borda:',
+    borderColor: 'Cor da borda:',
+    percentSideLeft: 'Esquerdo',
+    percentSideRight: 'Direito',
+  },
+  inputData: {
+    dataName: 'Nome:',
+    qty: 'Quantidade:',
+    color: 'Cor:',
+    insertData: 'Inserir Dados',
+  },
+  inputBar: {
+    fontColordifBar: 'Cor da fonte diferente da barra:',
+    widthBar: 'Largura das barras:',
+    fontSizeBar: 'Tamanho da fonte:',
+    fontBar: 'Fonte da barra:',
+    topPercent: 'Exibir a porcentagem no topo da barra',
+    baseName: 'Exibir o nome na base da barra',
+    fontColor: 'Cor da fonte:',
+  },
+  legend: {
+    fontLegendSize: 'Tamanho da fonte:',
+    fontColorLegend: 'Cor da fonte:',
+    colorLegend: 'Cor de fundo da legenda:',
+    borderLegend: 'Largura da borda:',
+    colorBorderLegend: 'Cor da borda:',
+    legendSideLeft: 'Esquerdo',
+    legendSideRight: 'Direito',
+    legendVerticalTop: 'Superior',
+    legendVerticalLower: 'Inferior',
+    withSub: 'Com legenda',
+
+  },
+};
