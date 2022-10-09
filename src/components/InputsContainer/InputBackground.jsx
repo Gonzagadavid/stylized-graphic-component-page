@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import { connect } from 'react-redux';
 import { inputBackground } from '../../data/inputs';
 import { actionAddBackground } from '../../redux/actions';
@@ -8,6 +8,7 @@ import Select from '../Select/Select';
 import './InputContainer.css';
 
 const InputBackground = ({ state, addBackground }) => {
+  const { formatMessage } = useIntl();
   const handlerChange = ({ target }) => {
     const { name, value } = target;
     addBackground({ [name]: value });
@@ -24,7 +25,7 @@ const InputBackground = ({ state, addBackground }) => {
             type={type}
             key={labelText}
             name={name}
-            labelText={labelText}
+            labelText={formatMessage({ id: `inputLabel.inputBackground.${labelText}` })}
             value={value || state[name]}
             change={handlerChange}
           />

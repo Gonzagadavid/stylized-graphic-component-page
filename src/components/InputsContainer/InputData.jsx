@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 import { inputData } from '../../data/inputs';
@@ -9,7 +9,7 @@ import './InputContainer.css';
 
 const InputData = ({ addData, addColor }) => {
   const INITIAL_STATE = { dataName: '', qty: 0, color: 'black' };
-
+  const { formatMessage } = useIntl();
   const [state, setState] = useState(INITIAL_STATE);
 
   const handlerChange = ({ target }) => {
@@ -28,17 +28,17 @@ const InputData = ({ addData, addColor }) => {
     <div className="InputConatiner">
       <h3><FormattedMessage id="navSetComponent.data" /></h3>
       {
-        inputData.map(({ type, name, labelText }) => (
+        inputData.map(({ type, name }) => (
           <Input
             type={type}
             name={name}
-            labelText={labelText}
+            labelText={formatMessage({ id: `inputLabel.inputData.${name}` })}
             value={state[name]}
             change={handlerChange}
           />
         ))
       }
-      <button type="button" onClick={insertData}>Inserir Dado</button>
+      <button type="button" onClick={insertData}><FormattedMessage id="inputLabel.inputData.insertData" /></button>
     </div>
   );
 };

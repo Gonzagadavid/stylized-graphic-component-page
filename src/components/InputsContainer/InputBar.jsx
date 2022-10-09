@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import { connect } from 'react-redux';
 import { inputBar } from '../../data/inputs';
 import { actionAddStyleBar } from '../../redux/actions';
@@ -7,6 +7,7 @@ import Input from '../Input/Input';
 import './InputContainer.css';
 
 const InputBar = ({ addStyleBar, state }) => {
+  const { formatMessage } = useIntl();
   const handlerChange = ({ target }) => {
     const {
       name, value, checked, type,
@@ -25,18 +26,18 @@ const InputBar = ({ addStyleBar, state }) => {
         <Input
           type="color"
           name="fontColor"
-          labelText="Cor da fonte:"
+          labelText={formatMessage({ id: 'inputLabel.inputBar.fontColor' })}
           value={state.fontColor}
           change={handlerChange}
         />
         )
         }
       {
-        inputBar.map(({ name, type, labelText }) => (
+        inputBar.map(({ name, type }) => (
           <Input
             type={type}
             name={name}
-            labelText={labelText}
+            labelText={formatMessage({ id: `inputLabel.inputBar.${name}` })}
             checked={state[name]}
             value={state[name]}
             change={handlerChange}
