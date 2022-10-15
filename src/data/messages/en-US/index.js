@@ -39,4 +39,9 @@ export default {
     legendVerticalLower: 'Lower',
     withSub: 'With subtitle',
   },
+  summaryData: {
+    data: 'The data will receive an object, where the key will be the name of the reference to the data to be displayed, and the value will be the number corresponding to it. The data is outside the “style” object, as it will contain the data to be displayed.',
+    colors: 'The colors is an array with the colors displayed in the bars, with their order following the sequence of the data object. If not enough colors are passed, the bars will have the color #aaa, and it will not be displayed in the legend.',
+    maxPercent: 'The maxPercent can receive three types: 100%, 75% and 50%, these being the maximum percentage to be displayed in the background. The maxPercent is not in the style object, so in case you prefer to make a logic to be displayed according to the result. If not passed, it will assume the value of 100%.',
+  },
 };

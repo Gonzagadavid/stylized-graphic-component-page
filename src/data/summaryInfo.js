@@ -1,15 +1,15 @@
 export const summaryData = [
   {
     name: 'data',
-    description: 'O data receberá um objeto onde a chave será o nome de referencia ao dado a ser exibido e o valor será o numero correspondente ao mesmo. O data fica fora do objeto “style” pois o mesmo conterá os dados a ser exibido.',
+    description: 'inputLabel.summaryData.data',
   },
   {
     name: 'colors',
-    description: 'O colors é um array com as cores exibidas nas barras, sendo a sua ordem seguindo a sequencia do objeto data. Caso não seja passada cores o suficiente, as barras terão a cor #aaa e a mesma não será exibida na legenda.',
+    description: 'inputLabel.summaryData.colors',
   },
   {
     name: 'maxPercent',
-    description: 'O maxPercent pode receber três tipos: 100%, 75% e 50%, sendo esses o maximo de porcentagem a ser exibido no background. O maxPercent não está no objeto style para que caso prefira fazer uma logica para ser exibido de acordo com o resultado. Caso não seja passado ele assumirá o  valor de 100%.',
+    description: 'inputLabel.summaryData.maxPercent',
   },
 ];
 
