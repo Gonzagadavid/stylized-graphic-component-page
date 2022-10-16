@@ -5,5 +5,6 @@ export default {
   summary: 'Sumário',
   summaryPage: {
     dynamicData: 'Dados dinâmicos',
+    styleData: 'Dados do estilo',
   },
 };

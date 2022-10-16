@@ -5,5 +5,6 @@ export default {
   summary: 'Summary',
   summaryPage: {
     dynamicData: 'Dynamic data',
+    styleData: 'Style data',
   },
 };

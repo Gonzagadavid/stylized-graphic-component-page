@@ -16,11 +16,11 @@ const SummaryPage = () => {
           <p>{formatMessage({ id })}</p>
         </div>
       ))}
-      <h3>Dados de estilo</h3>
-      {summaryStyle.map(({ name, description }) => (
+      <h3><FormattedMessage id="common.summaryPage.styleData" /></h3>
+      {summaryStyle.map(({ name, description: id }) => (
         <div key={name} className="item">
           <h4>{name}</h4>
-          <p>{description}</p>
+          <p>{formatMessage({ id })}</p>
         </div>
       ))}
     </div>
