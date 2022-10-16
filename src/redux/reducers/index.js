@@ -33,7 +33,7 @@ const INITIAL_STATE = {
   legendSide: 'right',
   legendVertical: 'atop',
   borderColor: '#407991',
-  locale: 'pt-BR',
+  locale: 'en-US',
 };
 
 const reducerData = (state = INITIAL_STATE, action) => {

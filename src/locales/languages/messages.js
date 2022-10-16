@@ -5,14 +5,6 @@ import {
 } from '../messages';
 
 export default {
-  'pt-BR': {
-    common: commonPT,
-    home: home['pt-BR'],
-    setPage: setPage['pt-BR'],
-    codePage: codePage['pt-BR'],
-    navSetComponent: navSetComponent['pt-BR'],
-    inputLabel: inputLabel['pt-BR'],
-  },
   'en-US': {
     common: commonEN,
     home: home['en-US'],
@@ -20,5 +12,13 @@ export default {
     codePage: codePage['en-US'],
     navSetComponent: navSetComponent['en-US'],
     inputLabel: inputLabel['en-US'],
+  },
+  'pt-BR': {
+    common: commonPT,
+    home: home['pt-BR'],
+    setPage: setPage['pt-BR'],
+    codePage: codePage['pt-BR'],
+    navSetComponent: navSetComponent['pt-BR'],
+    inputLabel: inputLabel['pt-BR'],
   },
 };
