@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <nav id="nav-app">
         <div style={{ color: 'white', fontSize: '75px' }}>
-          <a href="https://github.com/Gonzagadavid/percentage-chart" target="_blank" rel="noreferrer"><DiGithubBadge /></a>
+          <a href="https://github.com/Gonzagadavid/stylized-graphic-component-page" target="_blank" rel="noreferrer"><DiGithubBadge /></a>
           <a href="https://www.npmjs.com/package/stylized-graphic-component" target="_blank" rel="noreferrer"><DiNpm /></a>
         </div>
         <Link to={routes.HOME}><FormattedMessage id="common.home" /></Link>
